@@ -1,3 +1,5 @@
-<p>
-  tab works!
-</p>
+<div *ngIf="!isReady" class="loader-gif"></div>
+<div *ngIf="isReady">
+  <span class="tabs-bar-element tabs-bar-element-id">{{tab.tabId}}. </span>
+  <span class="tabs-bar-element tabs-bar-element-name">{{tab.tabName}}</span>
+</div>

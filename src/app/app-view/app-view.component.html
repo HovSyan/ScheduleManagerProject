@@ -1,0 +1,15 @@
+<h1 class="app-title">Schedule Manager</h1>
+<div *ngIf="!isReady" class="loader-gif"></div>
+<div *ngIf="isReady">
+  <div class="main-container">
+    <div class="tabs-bar">
+      <ul>
+        <li *ngFor="let tab of tabs">
+          <app-tab [id]="tab.tabId"></app-tab>
+        </li>
+      </ul>
+    </div>
+    <div class="schedule-bar"></div>
+    <div class="footer-bar"></div>
+  </div>
+</div>
